@@ -13,7 +13,7 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "publish": "rm -rf docs && mv dist docs && git add docs && git commit -m 'publish' && git push"
+    "release": "rm -rf docs && mv dist docs && git add docs && git commit -m 'publish' && git push"
   },
   "dependencies": {
     "pinia": "^2.1.7",
