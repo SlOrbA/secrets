@@ -1,17 +1,12 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
       <nav>
-        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/">Welcome</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
@@ -24,6 +19,11 @@ import HelloWorld from './components/HelloWorld.vue'
 header {
   line-height: 1.5;
   max-height: 100vh;
+  position: fixed; /* Fixes the header at the top of the viewport */
+  top: 0; /* Aligns the header at the top */
+  width: 100%; /* Ensures the header spans the full width of the viewport */
+  background-color: #fff; /* Optional: Sets a background color for the header */
+  z-index: 1000; /* Ensures the header stays above other content */
 }
 
 .logo {
@@ -32,10 +32,14 @@ header {
 }
 
 nav {
+  display: flex; /* Enables Flexbox for the nav element */
+  justify-content: center; /* Centers the flex items (nav links) horizontally */
+  align-items: center; /* Centers the flex items vertically */
   width: 100%;
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+  gap: 1rem; /* Optional: Adds space between the nav links */
 }
 
 nav a.router-link-exact-active {
