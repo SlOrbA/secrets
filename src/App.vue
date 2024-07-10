@@ -5,6 +5,9 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
     <div class="wrapper">
+      <div class="topic">
+        <h2>What are Secrets? - and how to use them</h2>
+      </div>
       <nav>
         <RouterLink to="/">Welcome</RouterLink>
         <RouterLink to="/definition">Definition</RouterLink>
@@ -28,9 +31,9 @@ header {
   z-index: 1000; /* Ensures the header stays above other content */
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+topic {
+  justify-content: center; /* Centers the flex items (nav links) horizontally */
+  align-items: center;
 }
 
 nav {
@@ -72,6 +75,11 @@ nav a:first-of-type {
   .logo {
     margin: 0 2rem 0 0;
   }
+
+  topic {
+    justify-content: center; /* Centers the flex items (nav links) horizontally */
+    align-items: center;
+  }  
 
   header .wrapper {
     display: flex;
