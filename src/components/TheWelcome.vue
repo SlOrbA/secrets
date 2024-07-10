@@ -4,12 +4,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'Welcome',
-};
-</script>
-
 <style scoped>
 .welcome {
   display: flex;

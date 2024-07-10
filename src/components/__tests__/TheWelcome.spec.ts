@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { mount } from '@vue/test-utils';
-import TheWelcome from '../components/TheWelcome.vue'; // Ensure this path matches the location of your component
+import TheWelcome from '../TheWelcome.vue'; // Ensure this path matches the location of your component
 
 describe('TheWelcome', () => {
   it('renders welcome message properly', () => {
