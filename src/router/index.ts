@@ -10,6 +10,30 @@ const router = createRouter({
       component: WelcomeView
     },
     {
+      path: '/definition',
+      name: 'definition',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/DefinitionView.vue')
+    },
+    {
+      path: '/automation',
+      name: 'automation',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/AutomationView.vue')
+    },
+    {
+      path: '/future',
+      name: 'future',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/FutureView.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
