@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
@@ -79,7 +79,7 @@ nav a:first-of-type {
   topic {
     justify-content: center; /* Centers the flex items (nav links) horizontally */
     align-items: center;
-  }  
+  }
 
   header .wrapper {
     display: flex;
